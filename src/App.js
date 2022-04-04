@@ -8,6 +8,8 @@ import NotFound from './components/NotFound/NotFound';
 import Reviews from './components/Reviews/Reviews';
 
 
+
+
 function App() {
   return (
     <div className="App">
@@ -15,6 +17,7 @@ function App() {
       <Routes>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>
+
         <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
