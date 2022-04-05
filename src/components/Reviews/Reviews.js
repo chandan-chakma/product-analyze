@@ -14,7 +14,7 @@ const Reviews = () => {
         < div className='grid grid-cols-2 gap-2' >
 
             {
-                reviews.slice(0, 4).map(review => <Review
+                reviews.map(review => <Review
                     key={review.id}
 
                     review={review}
