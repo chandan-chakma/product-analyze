@@ -1,16 +1,18 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import useFakeDb from '../../hooks/useFakeDb';
 import rog from '../../image/rog.jpg'
 import Reviews from '../Reviews/Reviews';
 
 
 
 const Home = () => {
+    const [reviews, setReviews] = useFakeDb();
+
     const navigate = useNavigate();
     const showAllREviews = () => {
         const path = `../Reviews`
         navigate(path);
-
     }
     return (
         <div>
@@ -25,7 +27,11 @@ const Home = () => {
                 </div>
 
             </div>
+
+
+
             <div className='m-5'>
+
                 <h2 className='text-2xl text-center text-blue-500 font-bold m-5'>Customer Reviews</h2>
                 <Reviews></Reviews>
 

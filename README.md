@@ -1,6 +1,19 @@
-# Getting Started with Create React App
+# ROG Zephyrus DUo SE-15
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Website [ROG Zephyrus](https://golden-sunshine-a6532f.netlify.app/home).
+
+## What i do in my website:
+- Create Four components.
+- install route.
+- Create Custom Link (active).
+- Create reviews data.
+- install Recharts.
+- Draw LineChart, AreaChart, PieChat,BarChart.
+- Change Title and Favicon.
+- Use Destructuring.
+- Use custom hock.
+
+
 
 ## Available Scripts
 

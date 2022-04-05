@@ -12,7 +12,7 @@ const Dashboard = () => {
     }, [])
 
     return (
-        <div className='grid grid-cols-2 gap-4 m-20 text-center'>
+        <div className='grid md:grid-cols-2 sm:grid-cols-12 gap-4 m-20 text-center'>
             <div>
                 <LineChart width={400} height={300} data={data}>
                     <Line dataKey="sell" stroke="#8884d8" />

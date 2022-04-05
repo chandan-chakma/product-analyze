@@ -1,14 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import useFakeDb from '../../hooks/useFakeDb';
 import Review from '../Review/Review';
 
 const Reviews = () => {
-    const [reviews, setReviews] = useState([]);
-    useEffect(() => {
-        fetch('reviews.json')
-            .then(res => res.json())
-            .then(data => setReviews(data))
-
-    }, [])
+    const [reviews, setReviews] = useFakeDb();
     return (
 
         < div className='grid grid-cols-2 gap-2' >
@@ -16,10 +10,10 @@ const Reviews = () => {
             {
                 reviews.map(review => <Review
                     key={review.id}
-
                     review={review}
                 ></Review>)
             }
+
         </div >
     );
 };
