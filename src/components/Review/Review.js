@@ -1,12 +1,22 @@
 import React from 'react';
 
 const Review = (props) => {
-    const { name } = props.review;
+    const { name, image, comment, rating } = props.review;
+
     return (
-        <div>
-            <h3>name:{name}</h3>
+
+        <div className='md:flex justify-center items-center border rounded-2xl m-5 '>
+            <div className='m-4'>
+                <img className='w-10 rounded-full' src={image} alt="" />
+                <h2 className='text-md font-semibold'>{name}</h2>
+            </div>
+            <div>
+                <p className='text-sm font-normal'>{comment}</p>
+                <p className='text-xl text-yellow-500'>{rating}</p>
+            </div>
 
         </div>
+
     );
 };
 

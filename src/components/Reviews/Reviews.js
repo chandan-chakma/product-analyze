@@ -7,18 +7,20 @@ const Reviews = () => {
         fetch('reviews.json')
             .then(res => res.json())
             .then(data => setReviews(data))
+
     }, [])
     return (
-        <div>
+
+        < div className='grid grid-cols-2 gap-2' >
+
             {
-                reviews.map(review => <Review>
+                reviews.slice(0, 4).map(review => <Review
                     key={review.id}
+
                     review={review}
-                </Review>)
+                ></Review>)
             }
-
-
-        </div>
+        </div >
     );
 };
 
